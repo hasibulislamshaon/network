@@ -1,7 +1,7 @@
 import socket
 mysocket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-mysocket.connect(('data.pr4e.org',80))
-cmd='GET http://data.pri4e.org/romeo.txt HTTP/1.0\n\n'.encode()
+mysocket.connect(('freecodecamp.org',80))
+cmd='GET https://www.freecodecamp.org/learn/scientific-computing-with-python/python-for-everybody/networking-write-a-web-browser\n\n'.encode()
 mysocket.send(cmd)
 while True:
     data=mysocket.recv(512)
