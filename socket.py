@@ -8,4 +8,4 @@ while True:
     if(len(data)<1):
         break
     print(data.decode())
-mysocket.close()
+mysocket.close()#this is an example practice of the tutorial that i am learning
