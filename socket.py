@@ -5,3 +5,6 @@ cmd='GET http://data.pri4e.org/romeo.txt HTTP/1.0\n\n'.encode()
 mysocket.send(cmd)
 while True:
     data=mysocket.recv(512)
+    if(len(data)<1):
+        break
+    print()
